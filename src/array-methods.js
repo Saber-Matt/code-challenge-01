@@ -6,3 +6,6 @@ export const howMuchPencil = (str) => {
   return arr;
 };
 
+export function wordsToCharList(arr) {
+  return arr.split('');
+};
