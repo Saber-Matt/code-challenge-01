@@ -9,7 +9,7 @@ test('Five and greater only', () => {
 test('new array with 5 or fewer characters', () => {
   const input = ['dog', 'wolf', 'by', 'family', 'eaten', 'camping']; // arrange
   const output = fiveCharactersOrFewerOnly(input); // act
-  expect(output).toEqual(['by', 'dog', 'wolf', 'eaten']); // assert
+  expect(output).toEqual(['dog', 'wolf', 'by', 'eaten']); // assert
 });
 
 test('evensOnly', () => {
