@@ -17,3 +17,21 @@ export function makeStrings(arr) {
     return `${person.name} ${person.age < 18 ? 'is under age!!' : 'can go to The Matrix'}`;
   });
 }
+
+export function namesOnly(arr) {
+  return arr.map(person => {
+    return `${person.name}`;
+  });
+}
+
+export function makeHeader(arr) {
+  return arr.map(person => {
+    return `<h1>${person.name}</h1><h2>${person.age}</h2>`;
+  });
+}
+
+export function capitalizeNames(arr) {
+  return arr.map(name => {
+    return name[0].toUpperCase() + name.slice(1).toLowerCase();
+  });
+}
