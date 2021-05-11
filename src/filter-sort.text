@@ -1,4 +1,4 @@
-import { fiveAndGreaterOnly, fiveCharactersOrFewerOnly, evensOnly } from './filter-sort.js';
+import { fiveAndGreaterOnly, fiveCharactersOrFewerOnly, evensOnly, ofAge } from './filter-sort.js';
 
 test('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
@@ -16,4 +16,17 @@ test('evensOnly', () => {
   const input = [3, 6, 8, 2]; // arrange
   const output = evensOnly(input); // act
   expect(output).toEqual([6, 8, 2]); // assert
+});
+
+test('ofAge', () => {
+  const input = [
+    { name: 'Angelina Jolie', age: 80 },
+    { name: 'Eric Jones', age: 2 },
+    { name: 'Paris Hilton', age: 5 },
+    { name: 'Kayne West', age: 16 },
+    { name: 'Bob Ziroll', age: 100 }];
+  const actual = ofAge(input);
+  expect(actual).toEqual([
+    { name: 'Angelina Jolie', age: 80 },
+    { name: 'Bob Ziroll', age: 100 }]);
 });
