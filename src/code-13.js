@@ -1,0 +1,3 @@
+const sortByChildren = (charArray) => {
+  //I'm trying to sort an array of strings in a specific order. None of the code examples I've found using regex have come close to what I'm trying to do. I think I should break this problem up into smaller pieces. But assigning values to each character and calling that seems to defeat the purpose of this challenge. Or does it? I'm not sure. My brain is tired. I'm tired. I want to use regex to sort the number of strings contained in each array by smallest to greatest. Somehow I need to throw alphabitization in there as well. Any tips? 
+};
